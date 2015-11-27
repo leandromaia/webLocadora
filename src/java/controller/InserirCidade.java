@@ -1,0 +1,37 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package controller;
+
+import controller.vo.Estado;
+import java.util.ArrayList;
+import javax.servlet.http.HttpServletRequest;
+import model.EstadoDAO;
+
+/**
+ *
+ * @author ebarros
+ */
+public class InserirCidade {
+     public static String execute(HttpServletRequest request) {
+        String jsp = "";
+        try {
+            ArrayList<Estado> listEstado = EstadoDAO.getAll();
+            if(listEstado != null){
+                request.setAttribute("listEstado", listEstado);
+                jsp = "/inserircidade.jsp";    
+            }else{
+                String erro = "Nao existe registros!";
+                request.setAttribute("erro", erro);
+                jsp = "/erro.jsp";    
+            }
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+            jsp = "";
+        }
+        return jsp;
+    }
+}
