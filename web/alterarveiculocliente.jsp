@@ -29,7 +29,7 @@ listVeiculo= VeiculoDAO.getAll();
     </head>
     <body>
          <center>
-            <h3>Alterar Veiculos Clientes</h3>
+            <h3>Alterar Veiculos - Clientes</h3>
             <form name="frmAltVeiculoCliente" method='post'>                
                 <input type='hidden' name='table' value='VeiculoCliente'>
                 <input type='hidden' name='acao' value='alterar'>
