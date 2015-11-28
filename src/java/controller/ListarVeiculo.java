@@ -22,7 +22,7 @@ import model.dao.VeiculoDAO;
 public class ListarVeiculo {
 
      public static String execute(HttpServletRequest request) {
-        String jsp = "";
+        
         try {
             ArrayList<Veiculo> listVeiculo = VeiculoDAO.getAll();
             if(listVeiculo != null){

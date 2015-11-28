@@ -40,14 +40,6 @@ listCategoria = (ArrayList<Categoria>) request.getAttribute("listCategoria");
                     </tr>
                     <tr>
                         <td>
-                            Descrição:
-                        </td>
-                        <td>
-                            <input type='text' name='descricao' value=''>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
                             Modelo:
                         </td>
                         <td>

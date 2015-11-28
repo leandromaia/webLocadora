@@ -11,8 +11,6 @@
 package controller;
 
 import model.bean.VeiculoCliente;
-import java.util.ArrayList;
-import javax.servlet.http.HttpServletRequest;
 import model.dao.VeiculoClienteDAO;
 
 /**
@@ -21,7 +19,7 @@ import model.dao.VeiculoClienteDAO;
  */
 public class ListarVeiculoCliente {
 
-     public static String execute(HttpServletRequest request) {
+     public String execute(HttpServletRequest request) {
         String jsp = "";
         try {
             ArrayList<VeiculoCliente> listVeiculoCliente = VeiculoClienteDAO.getAll();

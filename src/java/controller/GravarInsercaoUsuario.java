@@ -21,17 +21,8 @@ public class GravarInsercaoUsuario {
     
     public static String execute(HttpServletRequest request) {
         String jsp = "";
-        try {
-            // lendo o NomeUsuario que se deseja alterar
-            String nome = request.getParameter("nome");
-            String nomeCompleto = request.getParameter("nomecompleto");
-            String email = request.getParameter("email");
-            String senha = request.getParameter("senha");
+        try {            
             Usuario usuario = new Usuario();
-            usuario.setNome(nome);
-            usuario.setNomeCompleto(nomeCompleto);
-            usuario.setEmail(email);
-            usuario.setSenha(senha);
             
             Boolean create = UsuarioDAO.create(usuario);
             if(create != false){

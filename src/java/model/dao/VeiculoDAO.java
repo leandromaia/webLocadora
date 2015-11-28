@@ -41,23 +41,7 @@ public class VeiculoDAO {
         }
     }
     
-    public static boolean update(Veiculo veiculo) {
-        try {
-            pstmt = Conexao.getConnection().prepareStatement(
-                    "Update Veiculo Set CodModelo=?, CodMarca=?, CodCategoria=?, Descricao=? Where Placa = ?");            
-            pstmt.setInt(1, veiculo.getModelo().getCodModelo());
-            pstmt.setInt(2,veiculo.getMarca().getCodMarca());
-            pstmt.setInt(3, veiculo.getCategoria().getCodCategoria());
-            pstmt.setString(4, veiculo.getDescricao());
-            pstmt.setString(5, veiculo.getPlaca());
-            pstmt.executeUpdate();
-            pstmt.close();
-            return true;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
+    
     
     public static boolean delete(Veiculo veiculo) {
         try {
@@ -123,6 +107,10 @@ public class VeiculoDAO {
             e.printStackTrace();
             return null;
         }
+    }
+
+    public static Boolean update(Veiculo veiculo) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

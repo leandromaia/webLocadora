@@ -128,7 +128,7 @@ public class ServletWeb extends HttpServlet {
             jsp = GravarInsercaoUsuario.execute(request);
         else if (acao.equals("ExcluirUsuario"))
             jsp = ExcluirUsuario.execute(request);
-        else if (acao.equals("ListarVeiculoCliente"))
+        else if (acao.equals("ListarVehicleClient"))
             jsp = ListarVeiculoCliente.execute(request);
         else if (acao.equals("InserirVeiculoCliente"))
             jsp = InserirVeiculoCliente.execute(request);
