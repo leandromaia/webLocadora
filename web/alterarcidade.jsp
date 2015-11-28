@@ -22,7 +22,7 @@ listEstado = EstadoDAO.getAll();
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
          <center>
@@ -77,7 +77,7 @@ listEstado = EstadoDAO.getAll();
                             <input type='button' onclick="GravarAlterarTabela(document.frmAltCidade);" value='Gravar'>&nbsp;
                             <input type='reset' value='Redefinir'>
                             <input type='button' value='Excluir' onclick='Excluir(document.frmAltCidade.cod.value,document.frmAltCidade)'>    
-                            <a href='/locadora/servletweb?acao=InserirCidade'>Inserir Cidade</a>
+                            <a href='/servletweb?acao=InserirCidade'>Inserir Cidade</a>
                         </td>
                     </tr>
                 </table>

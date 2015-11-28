@@ -13,7 +13,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>locadora xxx</title>
+        <title>locadora Senac</title>
     </head>
     <center>
             <h3>Inserir Estados</h3>
@@ -41,7 +41,7 @@
                         <td colspan='2' aling='center'>
                             <input type='button' onclick="GravarAlterarTabela(document.frmInserirEstado)" value='Gravar'>&nbsp;
                             <input type='reset' value='Redefinir'>
-                            <a href='/locadora/servletweb?acao=ListarEstados'>Listar Estados</a><br>
+                            <a href='/servletweb?acao=ListarEstados'>Listar Estados</a><br>
                         </td>
                     </tr>
                 </table>

@@ -12,7 +12,7 @@ erro = (String)request.getAttribute("erro");
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
         <h2><%=erro%></h2>

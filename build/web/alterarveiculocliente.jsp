@@ -25,11 +25,11 @@ listVeiculo= VeiculoDAO.getAll();
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
          <center>
-            <h3>Alterar Projetos</h3>
+            <h3>Alterar Veiculos Clientes</h3>
             <form name="frmAltVeiculoCliente" method='post'>                
                 <input type='hidden' name='table' value='VeiculoCliente'>
                 <input type='hidden' name='acao' value='alterar'>
@@ -94,7 +94,7 @@ listVeiculo= VeiculoDAO.getAll();
                             <input type='button' onclick="GravarAlterarTabela(document.frmAltVeiculoCliente);" value='Gravar'>&nbsp;
                             <input type='reset' value='Redefinir'>
                             <input type='button' value='Excluir' onclick='Excluir(document.frmAltVeiculoCliente.cod.value,document.frmAltVeiculoCliente)'>    
-                            <a href='/locadora/servletweb?acao=InserirVeiculoCliente'>Inserir VeiculoCliente</a>
+                            <a href='/servletweb?acao=InserirVeiculoCliente'>Inserir VeiculoCliente</a>
                         </td>
                     </tr>
                 </table>

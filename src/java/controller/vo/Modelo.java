@@ -1,10 +1,7 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class Modelo {
     private Integer codModelo;
     private String descricao;

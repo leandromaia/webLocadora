@@ -26,7 +26,7 @@ listCategoria = (ArrayList<Categoria>) request.getAttribute("listCategoria");
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
         <center>
@@ -109,7 +109,7 @@ listCategoria = (ArrayList<Categoria>) request.getAttribute("listCategoria");
                         <td colspan='2' aling='center'>
                             <input type='button' onclick="GravarAlterarTabela(document.frmInserirVeiculo)" value='Gravar'>&nbsp;
                             <input type='reset' value='Redefinir'>
-                            <a href='/locadora/servletweb?acao=ListarVeiculo'>Listar Veiculos</a><br>    
+                            <a href='/servletweb?acao=ListarVeiculo'>Listar Veiculos</a><br>    
                         </td>
                     </tr>
                 </table>

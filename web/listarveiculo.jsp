@@ -22,13 +22,13 @@ listVeiculo = (ArrayList<Veiculo>) request.getAttribute("listVeiculo");
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>locadora xxx</title>
+        <title>locadora Senac</title>
     </head>
     <body>
        <center>
             <h3>Lista de Veiculos</h3>
-            <a href='/locadora/servletweb?acao=InserirVeiculo'>Novo Veiculo</a>
-            <form name="frmVeiculo" method='post' action='/locadora/servletweb'>
+            <a href='/servletweb?acao=InserirVeiculo'>Novo Veiculo</a>
+            <form name="frmVeiculo" method='post' action='/servletweb'>
                 <input type='hidden' name='acao' value=''>
                 <input type='hidden' name='cod' value=''>
                 <input type='hidden' name='table' value='Veiculo'>
@@ -58,19 +58,19 @@ listVeiculo = (ArrayList<Veiculo>) request.getAttribute("listVeiculo");
                     %>
                     <tr>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getPlaca()%></a>
+                            <a href="/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getPlaca()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getDescricao()%></a>
+                            <a href="/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getDescricao()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getModelo().getDescricao()%></a>
+                            <a href="/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getModelo().getDescricao()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getMarca().getDescricao()%></a>
+                            <a href="/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getMarca().getDescricao()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getCategoria().getDescricao()%></a>
+                            <a href="/servletweb?acao=AlterarVeiculo&Placa=<%=listVeiculo.get(i).getPlaca()%>"><%=listVeiculo.get(i).getCategoria().getDescricao()%></a>
                         </td>
                         <td>                            
                             <input type='button' value='Excluir' onclick='Excluir("<%=listVeiculo.get(i).getPlaca()%>",document.frmVeiculo)'>

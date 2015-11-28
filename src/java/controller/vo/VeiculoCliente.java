@@ -5,10 +5,7 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class VeiculoCliente {
     private Integer codVeiculoCliente;
     private Cliente cliente;

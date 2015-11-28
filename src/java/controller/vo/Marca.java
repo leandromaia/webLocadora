@@ -1,10 +1,7 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class Marca {
     private Integer codMarca;
     private String descricao;

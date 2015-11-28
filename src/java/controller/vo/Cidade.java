@@ -1,10 +1,7 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class Cidade {
     private Integer codCidade;
     private String nome;

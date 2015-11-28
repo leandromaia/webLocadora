@@ -1,10 +1,7 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class Usuario {
     private Integer codUsuario;
     private String senha;

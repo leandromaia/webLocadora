@@ -1,12 +1,17 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class Estado {    
     private String siglaCod;
+
+    public String getSiglaCod() {
+        return siglaCod;
+    }
+
+    public void setSiglaCod(String siglaCod) {
+        this.siglaCod = siglaCod;
+    }
     private String sigla;
     private String nome;
 
@@ -25,13 +30,4 @@ public class Estado {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    public String getSiglaCod() {
-        return siglaCod;
-    }
-
-    public void setSiglaCod(String siglaCod) {
-        this.siglaCod = siglaCod;
-    }
-    
 }

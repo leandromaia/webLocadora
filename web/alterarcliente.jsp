@@ -17,11 +17,11 @@ listCidade = CidadeDAO.getAll();
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
          <center>
-            <h3>Alterar Projetos</h3>
+            <h3>Alterar Cliente</h3>
             <form name="frmAltCliente" method='post'>                
                 <input type='hidden' name='table' value='Cliente'>
                 <input type='hidden' name='acao' value='alterar'>
@@ -120,7 +120,7 @@ listCidade = CidadeDAO.getAll();
                             <input type='button' onclick="GravarAlterarTabela(document.frmAltCliente);" value='Gravar'>&nbsp;
                             <input type='reset' value='Redefinir'>
                             <input type='button' value='Excluir' onclick='Excluir(document.frmAltCliente.cod.value,document.frmAltCliente)'>    
-                            <a href='/locadora/servletweb?acao=InserirCliente'>Inserir Cliente</a>
+                            <a href='/servletweb?acao=InserirCliente'>Inserir Cliente</a>
                         </td>
                     </tr>
                 </table>

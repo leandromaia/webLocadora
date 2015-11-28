@@ -22,13 +22,13 @@ listCidade = (ArrayList<Cidade>) request.getAttribute("listCidade");
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>locadora xxx</title>
+        <title>locadora Senac</title>
     </head>
     <body>
        <center>
             <h3>Lista de Cidades</h3>
-            <a href='/locadora/servletweb?acao=InserirCidade'>Nova Cidade</a>
-            <form name="frmCidade" method='post' action='/locadora/servletweb'>
+            <a href='/servletweb?acao=InserirCidade'>Nova Cidade</a>
+            <form name="frmCidade" method='post' action='/servletweb'>
                 <input type='hidden' name='acao' value=''>
                 <input type='hidden' name='cod' value=''>
                 <input type='hidden' name='table' value='Cidade'>
@@ -52,13 +52,13 @@ listCidade = (ArrayList<Cidade>) request.getAttribute("listCidade");
                     %>
                     <tr>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCidade&CodCidade=<%=listCidade.get(i).getCodCidade()%>"><%=listCidade.get(i).getCodCidade()%></a>
+                            <a href="/servletweb?acao=AlterarCidade&CodCidade=<%=listCidade.get(i).getCodCidade()%>"><%=listCidade.get(i).getCodCidade()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCidade&CodCidade=<%=listCidade.get(i).getCodCidade()%>"><%=listCidade.get(i).getNome()%></a>
+                            <a href="/servletweb?acao=AlterarCidade&CodCidade=<%=listCidade.get(i).getCodCidade()%>"><%=listCidade.get(i).getNome()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCidade&CodCidade=<%=listCidade.get(i).getCodCidade()%>"><%=listCidade.get(i).getEstado().getNome()%></a>
+                            <a href="/servletweb?acao=AlterarCidade&CodCidade=<%=listCidade.get(i).getCodCidade()%>"><%=listCidade.get(i).getEstado().getNome()%></a>
                         </td>
                         <td>                            
                             <input type='button' value='Excluir' onclick='Excluir(<%=listCidade.get(i).getCodCidade()%>,document.frmCidade)'>

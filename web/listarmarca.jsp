@@ -24,14 +24,14 @@ listMarca = (ArrayList<Marca>) request.getAttribute("listMarca");
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
     </head>
     <body>
         <center>
             <h3>Lista de Marcas</h3>
-            <a href='/locadora/inserirmarca.jsp'>Nova Marca</a>
-            <form name="frmMarca" method='post' action='/locadora/servletweb'>
+            <a href='/inserirmarca.jsp'>Nova Marca</a>
+            <form name="frmMarca" method='post' action='/servletweb'>
                 <input type='hidden' name='acao' value=''>
                 <input type='hidden' name='cod' value=''>
                 <input type='hidden' name='table' value='Marca'>
@@ -52,10 +52,10 @@ listMarca = (ArrayList<Marca>) request.getAttribute("listMarca");
                     %>
                     <tr>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarMarca&CodMarca=<%=listMarca.get(i).getCodMarca()%>"><%=listMarca.get(i).getCodMarca()%></a>
+                            <a href="/servletweb?acao=AlterarMarca&CodMarca=<%=listMarca.get(i).getCodMarca()%>"><%=listMarca.get(i).getCodMarca()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarMarca&CodMarca=<%=listMarca.get(i).getCodMarca()%>"><%=listMarca.get(i).getDescricao()%></a>
+                            <a href="/servletweb?acao=AlterarMarca&CodMarca=<%=listMarca.get(i).getCodMarca()%>"><%=listMarca.get(i).getDescricao()%></a>
                         </td>
                         <td>
                             <input type='button' value='Excluir' onclick='Excluir(<%=listMarca.get(i).getCodMarca()%>,document.frmMarca)'>

@@ -1,10 +1,7 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class Categoria {
     private Integer codCategoria;
     private String descricao;

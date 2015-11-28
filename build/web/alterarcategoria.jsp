@@ -25,7 +25,7 @@ categoria = (Categoria) request.getAttribute("categoria");
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
 
@@ -57,7 +57,7 @@ categoria = (Categoria) request.getAttribute("categoria");
                             <input type='button' onclick="GravarAlterarTabela(document.frmAltCategoria);" value='Gravar'>&nbsp;
                             <input type='reset' value='Redefinir'>
                             <input type='button' value='Excluir' onclick='Excluir(document.frmAltCategoria.cod.value,document.frmAltCategoria)'>    
-                            <a href='/locadora/inserircategoria.jsp'>Inserir Categoria</a>
+                            <a href='/inserircategoria.jsp'>Inserir Categoria</a>
                         </td>
                     </tr>
                 </table>

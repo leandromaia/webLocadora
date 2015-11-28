@@ -22,13 +22,13 @@ listCliente = (ArrayList<Cliente>) request.getAttribute("listCliente");
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>locadora xxx</title>
+        <title>locadora Senac</title>
     </head>
     <body>
        <center>
             <h3>Lista de Clientes</h3>
-            <a href='/locadora/servletweb?acao=InserirCliente'>Novo Cliente</a>
-            <form name="frmCliente" method='post' action='/locadora/servletweb'>
+            <a href='/servletweb?acao=InserirCliente'>Novo Cliente</a>
+            <form name="frmCliente" method='post' action='/servletweb'>
                 <input type='hidden' name='acao' value=''>
                 <input type='hidden' name='cod' value=''>
                 <input type='hidden' name='table' value='Cliente'>
@@ -70,31 +70,31 @@ listCliente = (ArrayList<Cliente>) request.getAttribute("listCliente");
                     %>
                     <tr>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getCodCliente()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getCodCliente()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getNome()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getNome()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getCidade().getNome()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getCidade().getNome()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getBairro()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getBairro()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getCpf()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getCpf()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getDataNasc()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getDataNasc()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getEmail()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getEmail()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getEndereco()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getEndereco()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getFone()%></a>
+                            <a href="/servletweb?acao=AlterarCliente&CodCliente=<%=listCliente.get(i).getCodCliente()%>"><%=listCliente.get(i).getFone()%></a>
                         </td>
                         <td>                            
                             <input type='button' value='Excluir' onclick='Excluir(<%=listCliente.get(i).getCodCliente()%>,document.frmCliente)'>

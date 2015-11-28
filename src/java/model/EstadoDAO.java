@@ -24,11 +24,11 @@ public class EstadoDAO {
     
     public static boolean create(Estado estado) {
         try {
-            //estado.setSigla(Conexao.getAutoInc("Estado"));
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Insert Into Estado(sigla, nome) Values(?,?)");
+                    "Insert Into Estado(siglaCod, sigla, nome) Values(?,?,?)");
             pstmt.setString(1, estado.getSigla());
-            pstmt.setString(2, estado.getNome());
+            pstmt.setString(2, estado.getSigla());
+            pstmt.setString(3, estado.getNome());
             pstmt.executeUpdate();
             pstmt.close();
             return true;
@@ -97,7 +97,7 @@ public class EstadoDAO {
         try {
             Estado estado = null;
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Select * From Estado Where Sigla = ?");
+                    "Select * From Estado Where siglaCod = ?");
             pstmt.setString(1, sigla);
             rs = pstmt.executeQuery();
             if (rs.next()) {

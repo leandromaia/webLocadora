@@ -25,7 +25,7 @@ marca = (Marca) request.getAttribute("marca");
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
 
@@ -57,7 +57,7 @@ marca = (Marca) request.getAttribute("marca");
                             <input type='button' onclick="GravarAlterarTabela(document.frmAltMarca);" value='Gravar'>&nbsp;
                             <input type='reset' value='Redefinir'>
                             <input type='button' value='Excluir' onclick='Excluir(document.frmAltMarca.cod.value,document.frmAltMarca)'>    
-                            <a href='/locadora/inserirmarca.jsp'>Inserir Marca</a>    
+                            <a href='/inserirmarca.jsp'>Inserir Marca</a>    
                         </td>
                     </tr>
                 </table>

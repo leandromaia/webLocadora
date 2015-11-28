@@ -32,7 +32,7 @@
       if(table == "Estado"){
         if (confirm('Deseja excluir o Estado da Sigla: ' + chave + '?')) {
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirEstado";
+                frm.acao.value = "/servletweb?acao=ExcluirEstado";
                 frm.action = frm.acao.value;
             }else
                 frm.acao.value = 'ExcluirEstado';
@@ -43,7 +43,7 @@
       }else if(table == "Cidade"){
         if (confirm('Deseja excluir a Cidade do Código: ' + chave + '?')) {
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirCidade";
+                frm.acao.value = "/servletweb?acao=ExcluirCidade";
                 frm.action = frm.acao.value;
             }else
                 frm.acao.value = 'ExcluirCidade';
@@ -54,7 +54,7 @@
       }else if(table == "Cliente"){
         if (confirm('Deseja excluir o Cliente do Código: ' + chave + '?')) {
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirCliente";
+                frm.acao.value = "/servletweb?acao=ExcluirCliente";
                 frm.action = frm.acao.value;
             }else
                 frm.acao.value = 'ExcluirCliente';
@@ -65,7 +65,7 @@
       }else if(table == "Categoria"){
         if (confirm('Deseja excluir a Categoria do Código: ' + chave + '?')) {
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirCategoria";
+                frm.acao.value = "/servletweb?acao=ExcluirCategoria";
                 frm.action = frm.acao.value;
             }else
                 frm.acao.value = 'ExcluirCategoria';
@@ -76,7 +76,7 @@
       }else if(table == "Veiculo"){
         if (confirm('Deseja excluir o Veiculo da Placa: ' + chave + '?')) {
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirVeiculo";
+                frm.acao.value = "/servletweb?acao=ExcluirVeiculo";
                 frm.action = frm.acao.value;
             }else    
                 frm.acao.value = 'ExcluirVeiculo';
@@ -87,7 +87,7 @@
       }else if(table == "VeiculoCliente"){
         if (confirm('Deseja excluir o VeiculoCliente do Código: ' + chave + '?')) {
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirVeiculoCliente";
+                frm.acao.value = "/servletweb?acao=ExcluirVeiculoCliente";
                 frm.action = frm.acao.value;
             }else    
                 frm.acao.value = 'ExcluirVeiculoCliente';
@@ -98,7 +98,7 @@
       }else if(table == "Usuario"){
         if (confirm('Deseja excluir o Usuario do Código: ' + chave + '?')) {            
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirUsuario";
+                frm.acao.value = "/servletweb?acao=ExcluirUsuario";
                 frm.action = frm.acao.value;
             }else
                 frm.acao.value = 'ExcluirUsuario';
@@ -109,7 +109,7 @@
       }else if(table == "Marca"){
         if (confirm('Deseja excluir a Marca do Código: ' + chave + '?')) {
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirMarca";
+                frm.acao.value = "/servletweb?acao=ExcluirMarca";
                 frm.action = frm.acao.value;
             }else
                 frm.acao.value = 'ExcluirMarca';
@@ -120,7 +120,7 @@
       }else if(table == "Modelo"){
         if (confirm('Deseja excluir o Modelo do Código: ' + chave + '?')) {
             if(frm.acao.value == "alterar"){
-                frm.acao.value = "/locadora/servletweb?acao=ExcluirModelo";
+                frm.acao.value = "/servletweb?acao=ExcluirModelo";
                 frm.action = frm.acao.value;
             }else
                 frm.acao.value = 'ExcluirModelo';
@@ -200,9 +200,9 @@ function GravarAlterarTabela(frm){
     if(table == "Estado"){    
         if(ValidarEstado(frm)){
             if(frm.acao.value == "alterar")
-                caminhourl = "/locadora/servletweb?acao=GravarAlteracaoEstado";
+                caminhourl = "/servletweb?acao=GravarAlteracaoEstado";
             else if(frm.acao.value == "gravar")
-                caminhourl = "/locadora/servletweb?acao=GravarInsercaoEstado";  
+                caminhourl = "/servletweb?acao=GravarInsercaoEstado";  
         }        
     }else if(table =="Cidade"){
         if(frm.nome.value == ""){
@@ -211,23 +211,23 @@ function GravarAlterarTabela(frm){
             return false;
         }
         if(frm.acao.value == "alterar")
-                caminhourl = "/locadora/servletweb?acao=GravarAlteracaoCidade";
+                caminhourl = "/servletweb?acao=GravarAlteracaoCidade";
         else if(frm.acao.value == "gravar")
-            caminhourl = "/locadora/servletweb?acao=GravarInsercaoCidade";  
+            caminhourl = "/servletweb?acao=GravarInsercaoCidade";  
 
     }else if(table =="Cliente"){
         if(ValidarCliente(frm)){
             if(frm.acao.value == "alterar")
-                caminhourl = "/locadora/servletweb?acao=GravarAlteracaoCliente";
+                caminhourl = "/servletweb?acao=GravarAlteracaoCliente";
             else if(frm.acao.value == "gravar")
-                caminhourl = "/locadora/servletweb?acao=GravarInsercaoCliente";  
+                caminhourl = "/servletweb?acao=GravarInsercaoCliente";  
         }
     }else if(table =="Veiculo"){
         if(ValidarVeiculo(frm)){
             if(frm.acao.value == "alterar")
-                caminhourl = "/locadora/servletweb?acao=GravarAlteracaoVeiculo";
+                caminhourl = "/servletweb?acao=GravarAlteracaoVeiculo";
             else if(frm.acao.value == "gravar")
-                caminhourl = "/locadora/servletweb?acao=GravarInsercaoVeiculo";  
+                caminhourl = "/servletweb?acao=GravarInsercaoVeiculo";  
         }
     }else if(table =="Modelo"){
         if(frm.descricao.value == ""){
@@ -236,9 +236,9 @@ function GravarAlterarTabela(frm){
             return false;
         }else{    
             if(frm.acao.value == "alterar")
-                caminhourl = "/locadora/servletweb?acao=GravarAlteracaoModelo";
+                caminhourl = "/servletweb?acao=GravarAlteracaoModelo";
             else if(frm.acao.value == "gravar")
-                caminhourl = "/locadora/servletweb?acao=GravarInsercaoModelo";            
+                caminhourl = "/servletweb?acao=GravarInsercaoModelo";            
         }
     }else if(table =="Marca"){
         if(frm.descricao.value == ""){
@@ -247,9 +247,9 @@ function GravarAlterarTabela(frm){
             return false;
         }else{    
             if(frm.acao.value == "alterar")
-                caminhourl = "/locadora/servletweb?acao=GravarAlteracaoMarca";
+                caminhourl = "/servletweb?acao=GravarAlteracaoMarca";
             else if(frm.acao.value == "gravar")
-                caminhourl = "/locadora/servletweb?acao=GravarInsercaoMarca";            
+                caminhourl = "/servletweb?acao=GravarInsercaoMarca";            
         }
     }else if(table =="Categoria"){
         if(frm.descricao.value == ""){
@@ -258,22 +258,22 @@ function GravarAlterarTabela(frm){
             return false;
         }else{    
             if(frm.acao.value == "alterar")
-                caminhourl = "/locadora/servletweb?acao=GravarAlteracaoCategoria";
+                caminhourl = "/servletweb?acao=GravarAlteracaoCategoria";
             else if(frm.acao.value == "gravar")
-                caminhourl = "/locadora/servletweb?acao=GravarInsercaoCategoria";            
+                caminhourl = "/servletweb?acao=GravarInsercaoCategoria";            
         }
     }else if(table =="Usuario"){
         if(ValidarUsuario(frm)){
             if(frm.acao.value == "alterar")
-                caminhourl = "/locadora/servletweb?acao=GravarAlteracaoUsuario";
+                caminhourl = "/servletweb?acao=GravarAlteracaoUsuario";
             else if(frm.acao.value == "gravar")
-                caminhourl = "/locadora/servletweb?acao=GravarInsercaoUsuario";  
+                caminhourl = "/servletweb?acao=GravarInsercaoUsuario";  
         }
     }else if(table =="VeiculoCliente"){        
         if(frm.acao.value == "alterar")
-            caminhourl = "/locadora/servletweb?acao=GravarAlteracaoVeiculoCliente";
+            caminhourl = "/servletweb?acao=GravarAlteracaoVeiculoCliente";
         else if(frm.acao.value == "gravar")
-            caminhourl = "/locadora/servletweb?acao=GravarInsercaoVeiculoCliente";  
+            caminhourl = "/servletweb?acao=GravarInsercaoVeiculoCliente";  
     }
     frm.action = caminhourl;  
     frm.submit();

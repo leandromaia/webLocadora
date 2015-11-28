@@ -20,18 +20,18 @@ String codUsuario="";
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
         <h2>Menu</h2>
-         <a href='/locadora/servletweb?acao=ListarEstados'>Cadastro de Estados</a><br>
-         <a href='/locadora/servletweb?acao=ListarCidade'>Cadastro de Cidades</a><br>
-         <a href='/locadora/servletweb?acao=ListarCliente'>Cadastro de Clientes</a><br>
-         <a href='/locadora/servletweb?acao=ListarVeiculo'>Cadastro de Veiculos</a><br>
-         <a href='/locadora/servletweb?acao=ListarCategoria'>Cadastro de Categorias</a><br>
-         <a href='/locadora/servletweb?acao=ListarVeiculoCliente'>Cadastro de Veiculos Clientes</a><br>
-         <a href='/locadora/servletweb?acao=ListarUsuario'>Cadastro de Usuarios</a><br>
-         <a href='/locadora/servletweb?acao=ListarMarca'>Cadastro de Marcas</a><br>
-         <a href='/locadora/servletweb?acao=ListarModelo'>Cadastro de Modelos</a><br>    
+         <a href='/servletweb?acao=ListarEstados'>Cadastro de Estados</a><br>
+         <a href='/servletweb?acao=ListarCidade'>Cadastro de Cidades</a><br>
+         <a href='/servletweb?acao=ListarCliente'>Cadastro de Clientes</a><br>
+         <a href='/servletweb?acao=ListarVeiculo'>Cadastro de Veiculos</a><br>
+         <a href='/servletweb?acao=ListarCategoria'>Cadastro de Categorias</a><br>
+         <a href='/servletweb?acao=ListarVeiculoCliente'>Cadastro de Veiculos Clientes</a><br>
+         <a href='/servletweb?acao=ListarUsuario'>Cadastro de Usuarios</a><br>
+         <a href='/servletweb?acao=ListarMarca'>Cadastro de Marcas</a><br>
+         <a href='/servletweb?acao=ListarModelo'>Cadastro de Modelos</a><br>    
     </body>
 </html>

@@ -14,14 +14,14 @@ listEstado = (ArrayList<Estado>) request.getAttribute("listEstado");
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
     </head>
     <body>
         <center>
             <h3>Lista de Estados</h3>
-            <a href='/locadora/inserirestado.jsp'>Novo Estado</a>
-            <form name="frmEstado" method='post' action='/locadora/servletweb'>
+            <a href='/inserirestado.jsp'>Novo Estado</a>
+            <form name="frmEstado" method='post' action='/servletweb'>
                 <input type='hidden' name='acao' value=''>
                 <input type='hidden' name='cod' value=''>
                 <input type='hidden' name='table' value='Estado'>
@@ -42,10 +42,10 @@ listEstado = (ArrayList<Estado>) request.getAttribute("listEstado");
                     %>
                     <tr>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarEstado&Sigla=<%=listEstado.get(i).getSigla()%>"><%=listEstado.get(i).getSigla()%></a>
+                            <a href="/servletweb?acao=AlterarEstado&Sigla=<%=listEstado.get(i).getSigla()%>"><%=listEstado.get(i).getSigla()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarEstado&Sigla=<%=listEstado.get(i).getSigla()%>"><%=listEstado.get(i).getNome()%></a>
+                            <a href="/servletweb?acao=AlterarEstado&Sigla=<%=listEstado.get(i).getSigla()%>"><%=listEstado.get(i).getNome()%></a>
                         </td>
                         <td>
                             <input type='button' value='Excluir' onclick='Excluir("<%=listEstado.get(i).getSigla()%>",document.frmEstado)'>

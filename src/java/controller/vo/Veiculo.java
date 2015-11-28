@@ -5,10 +5,7 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class Veiculo {
     private String placa;
     private Modelo modelo;

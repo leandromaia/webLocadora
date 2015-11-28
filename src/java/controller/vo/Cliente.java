@@ -1,10 +1,7 @@
 
 package controller.vo;
 
-/**
- *
- * @author Everton Barros
- */
+
 public class Cliente {
     private Integer codCliente;
     private Cidade cidade;

@@ -24,14 +24,14 @@ listCategoria = (ArrayList<Categoria>) request.getAttribute("listCategoria");
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
     </head>
     <body>
         <center>
             <h3>Lista de Categorias</h3>
-            <a href='/locadora/inserircategoria.jsp'>Nova Categoria</a>
-            <form name="frmCategoria" method='post' action='/locadora/servletweb'>
+            <a href='/inserircategoria.jsp'>Nova Categoria</a>
+            <form name="frmCategoria" method='post' action='/servletweb'>
                 <input type='hidden' name='acao' value=''>
                 <input type='hidden' name='cod' value=''>
                 <input type='hidden' name='table' value='Categoria'>
@@ -52,10 +52,10 @@ listCategoria = (ArrayList<Categoria>) request.getAttribute("listCategoria");
                     %>
                     <tr>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCategoria&CodCategoria=<%=listCategoria.get(i).getCodCategoria()%>"><%=listCategoria.get(i).getCodCategoria()%></a>
+                            <a href="/servletweb?acao=AlterarCategoria&CodCategoria=<%=listCategoria.get(i).getCodCategoria()%>"><%=listCategoria.get(i).getCodCategoria()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarCategoria&CodCategoria=<%=listCategoria.get(i).getCodCategoria()%>"><%=listCategoria.get(i).getDescricao()%></a>
+                            <a href="/servletweb?acao=AlterarCategoria&CodCategoria=<%=listCategoria.get(i).getCodCategoria()%>"><%=listCategoria.get(i).getDescricao()%></a>
                         </td>
                         <td>
                             <input type='button' value='Excluir' onclick='Excluir(<%=listCategoria.get(i).getCodCategoria()%>,document.frmCategoria)'>

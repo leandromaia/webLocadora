@@ -17,7 +17,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
     </head>
     <body>
 
@@ -63,7 +63,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                         <td colspan='2' aling='center'>
                             <input type='button' onclick="GravarAlterarTabela(document.frmInserirUsuario)" value='Gravar'>&nbsp;
                             <input type='reset' value='Redefinir'>
-                            <a href='/locadora/servletweb?acao=ListarUsuario'>Listar Usuarios</a><br>
+                            <a href='/servletweb?acao=ListarUsuario'>Listar Usuarios</a><br>
                         </td>
                     </tr>
                 </table>

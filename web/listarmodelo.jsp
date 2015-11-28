@@ -24,14 +24,14 @@ listModelo = (ArrayList<Modelo>) request.getAttribute("listModelo");
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
     </head>
     <body>
         <center>
             <h3>Lista de Modelos</h3>
-            <a href='/locadora/inserirmodelo.jsp'>Novo Modelo</a>
-            <form name="frmModelo" method='post' action='/locadora/servletweb'>
+            <a href='/inserirmodelo.jsp'>Novo Modelo</a>
+            <form name="frmModelo" method='post' action='/servletweb'>
                 <input type='hidden' name='acao' value=''>
                 <input type='hidden' name='cod' value=''>
                 <input type='hidden' name='table' value='Modelo'>
@@ -52,10 +52,10 @@ listModelo = (ArrayList<Modelo>) request.getAttribute("listModelo");
                     %>
                     <tr>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarModelo&CodModelo=<%=listModelo.get(i).getCodModelo()%>"><%=listModelo.get(i).getCodModelo()%></a>
+                            <a href="/servletweb?acao=AlterarModelo&CodModelo=<%=listModelo.get(i).getCodModelo()%>"><%=listModelo.get(i).getCodModelo()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarModelo&CodModelo=<%=listModelo.get(i).getCodModelo()%>"><%=listModelo.get(i).getDescricao()%></a>
+                            <a href="/servletweb?acao=AlterarModelo&CodModelo=<%=listModelo.get(i).getCodModelo()%>"><%=listModelo.get(i).getDescricao()%></a>
                         </td>
                         <td>
                             <input type='button' value='Excluir' onclick='Excluir(<%=listModelo.get(i).getCodModelo()%>,document.frmModelo)'>

@@ -24,14 +24,14 @@ listUsuario = (ArrayList<Usuario>) request.getAttribute("listUsuario");
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Locadora xxx</title>
+        <title>Locadora Senac</title>
         <script type="text/javascript" language="JavaScript" src="js/webvalida.js"></script>
     </head>
     <body>
         <center>
             <h3>Lista de Usuarios</h3>
-            <a href='/locadora/inserirusuario.jsp'>Novo Usuario</a>
-            <form name="frmUsuario" method='post' action='/locadora/servletweb'>
+            <a href='/inserirusuario.jsp'>Novo Usuario</a>
+            <form name="frmUsuario" method='post' action='/servletweb'>
                 <input type='hidden' name='acao' value=''>
                 <input type='hidden' name='cod' value=''>
                 <input type='hidden' name='table' value='Usuario'>
@@ -62,19 +62,19 @@ listUsuario = (ArrayList<Usuario>) request.getAttribute("listUsuario");
                     %>
                     <tr>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getCodUsuario()%></a>
+                            <a href="/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getCodUsuario()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getNome()%></a>
+                            <a href="/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getNome()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getNomeCompleto()%></a>
+                            <a href="/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getNomeCompleto()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getEmail()%></a>
+                            <a href="/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getEmail()%></a>
                         </td>
                         <td>
-                            <a href="/locadora/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getSenha()%></a>
+                            <a href="/servletweb?acao=AlterarUsuario&CodUsuario=<%=listUsuario.get(i).getCodUsuario()%>"><%=listUsuario.get(i).getSenha()%></a>
                         </td>
                         <td>
                             <input type='button' value='Excluir' onclick='Excluir(<%=listUsuario.get(i).getCodUsuario()%>,document.frmUsuario)'>
