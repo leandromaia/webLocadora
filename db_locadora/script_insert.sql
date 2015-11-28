@@ -55,3 +55,11 @@ VALUES
 INSERT INTO `db_locadora`.`veiculocliente`
 (`codCliente`,`placa`)
 VALUES (2, 'HFW9877');
+
+INSERT INTO `db_locadora`.`usuario`
+(`Nome`,
+`NomeCompleto`,
+`Email`,
+`Senha`)
+VALUES
+('leandro', 'Leandro Maia', 'Email', 'aaaa');
