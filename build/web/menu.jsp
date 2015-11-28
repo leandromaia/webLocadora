@@ -1,10 +1,6 @@
-<%-- 
-    Document   : menu
-    Created on : 25/03/2008, 15:28:43
-    Author     : everton
---%>
+
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
-<%@page import="controller.vo.Usuario,controller.Login"%>
+<%@page import="model.bean.Usuario,controller.Login"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">

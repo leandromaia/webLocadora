@@ -5,9 +5,9 @@
 
 package controller;
 
-import controller.vo.Marca;
+import model.bean.Marca;
 import javax.servlet.http.HttpServletRequest;
-import model.MarcaDAO;
+import model.dao.MarcaDAO;
 
 /**
  *

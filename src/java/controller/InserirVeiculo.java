@@ -9,14 +9,14 @@
 
 package controller;
 
-import controller.vo.Marca;
-import controller.vo.Modelo;
-import controller.vo.Categoria;
+import model.bean.Marca;
+import model.bean.Modelo;
+import model.bean.Categoria;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
-import model.MarcaDAO;
-import model.ModeloDAO;
-import model.CategoriaDAO;
+import model.dao.MarcaDAO;
+import model.dao.ModeloDAO;
+import model.dao.CategoriaDAO;
 
 /**
  *

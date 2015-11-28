@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
-<%@ page import="java.util.ArrayList,controller.vo.Cliente,controller.vo.Veiculo"%>
+<%@ page import="java.util.ArrayList,model.bean.Cliente,model.bean.Veiculo"%>
 <%@ include file="/menu.jsp" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">

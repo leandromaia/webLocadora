@@ -1,7 +1,7 @@
 
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="controller.vo.Modelo,model.ModeloDAO"%>
+<%@page import="model.bean.Modelo,model.dao.ModeloDAO"%>
 <%@ include file="/menu.jsp" %>
 <%--
 The taglib directive below imports the JSTL library. If you uncomment it,

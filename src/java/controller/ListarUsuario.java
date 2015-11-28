@@ -15,8 +15,8 @@ package controller;
 
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
-import model.UsuarioDAO;
-import controller.vo.Usuario;
+import model.dao.UsuarioDAO;
+import model.bean.Usuario;
 
 public class ListarUsuario {
     

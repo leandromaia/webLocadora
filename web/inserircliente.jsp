@@ -1,5 +1,5 @@
 
-<%@ page import="java.util.ArrayList,controller.vo.Cliente,controller.vo.Cidade"%>
+<%@ page import="java.util.ArrayList,model.bean.Cliente,model.bean.Cidade"%>
 <%@ include file="/menu.jsp" %>
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
 

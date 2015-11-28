@@ -1,11 +1,7 @@
-<%-- 
-    Document   : listarcliente
-    Created on : 28/03/2008, 14:14:04
-    Author     : ebarros
---%>
+
 
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
-<%@page import="controller.vo.Cliente,java.util.ArrayList"%>
+<%@page import="model.bean.Cliente,java.util.ArrayList"%>
 <%@ include file="/menu.jsp" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">

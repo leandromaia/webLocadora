@@ -15,8 +15,8 @@ package controller;
 
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
-import model.MarcaDAO;
-import controller.vo.Marca;
+import model.dao.MarcaDAO;
+import model.bean.Marca;
 
 public class ListarMarca {
     

@@ -9,9 +9,9 @@
 
 package controller;
 
-import controller.vo.Cliente;
+import model.bean.Cliente;
 import javax.servlet.http.HttpServletRequest;
-import model.ClienteDAO;
+import model.dao.ClienteDAO;
 
 /**
  *

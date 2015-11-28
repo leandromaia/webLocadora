@@ -5,10 +5,10 @@
 
 package controller;
 
-import controller.vo.Estado;
+import model.bean.Estado;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
-import model.EstadoDAO;
+import model.dao.EstadoDAO;
 
 /**
  *

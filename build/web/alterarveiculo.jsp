@@ -1,11 +1,6 @@
-<%-- 
-    Document   : alterarveiculo
-    Created on : 28/03/2008, 15:27:53
-    Author     : ebarros
---%>
 
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
-<%@page import="java.util.ArrayList,controller.vo.Veiculo,model.VeiculoDAO,model.MarcaDAO, model.CategoriaDAO,
+<%@page import="java.util.ArrayList,model.bean.Veiculo,model.dao.VeiculoDAO,model.dao.MarcaDAO, model.dao.CategoriaDAO,
                model.ModeloDAO,controller.vo.Modelo,controller.vo.Marca,controller.vo.Categoria"%>
 <%@ include file="/menu.jsp" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"

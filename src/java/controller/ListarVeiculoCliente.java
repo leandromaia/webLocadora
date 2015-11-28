@@ -10,10 +10,10 @@
 
 package controller;
 
-import controller.vo.VeiculoCliente;
+import model.bean.VeiculoCliente;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
-import model.VeiculoClienteDAO;
+import model.dao.VeiculoClienteDAO;
 
 /**
  *

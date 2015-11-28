@@ -1,34 +1,34 @@
 /*
- * ModeloDAO.java
+ * Categoria.java
  *
- * Created on 10 de Mar�o de 2008, 19:05
+ * Created on 20 de Março de 2008, 19:28
  *
  * To change this template, choose Tools | Template Manager
  * and open the template in the editor.
  */
 
-package model;
+package model.dao;
 
 /**
  *
  * @author root
  */
-
 import java.sql.*;
 import java.util.ArrayList;
-import controller.vo.Modelo;
+import model.bean.Categoria;
 
-public class ModeloDAO {
+public class CategoriaDAO {
+    
     private static PreparedStatement pstmt = null;
     private static ResultSet rs = null;
     
-    public static boolean create(Modelo modelo) {
+    public static boolean create(Categoria categoria) {
         try {
-            modelo.setCodModelo(Conexao.getAutoInc("Modelo"));
+            categoria.setCodCategoria(Conexao.getAutoInc("Categoria"));
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Insert Into Modelo(CodModelo, Descricao) Values(?,?)");
-            pstmt.setInt(1, modelo.getCodModelo());
-            pstmt.setString(2, modelo.getDescricao());            
+                    "Insert Into Categoria(CodCategoria, Descricao) Values(?,?)");
+            pstmt.setInt(1, categoria.getCodCategoria());
+            pstmt.setString(2, categoria.getDescricao());            
             pstmt.executeUpdate();
             pstmt.close();
             return true;
@@ -38,12 +38,12 @@ public class ModeloDAO {
         }
     }
     
-    public static boolean update(Modelo modelo) {
+    public static boolean update(Categoria categoria) {
         try {
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Update Modelo Set Descricao = ? Where CodModelo = ?");
-            pstmt.setString(1, modelo.getDescricao());            
-            pstmt.setInt(2, modelo.getCodModelo());
+                    "Update Categoria Set Descricao = ? Where CodCategoria = ?");
+            pstmt.setString(1, categoria.getDescricao());            
+            pstmt.setInt(2, categoria.getCodCategoria());
             pstmt.executeUpdate();
             pstmt.close();
             return true;
@@ -53,11 +53,11 @@ public class ModeloDAO {
         }
     }
     
-    public static boolean delete(Modelo modelo) {
+    public static boolean delete(Categoria categoria) {
         try {
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Delete From Modelo Where CodModelo = ?");
-            pstmt.setInt(1, modelo.getCodModelo());
+                    "Delete From Categoria Where CodCategoria = ?");
+            pstmt.setInt(1, categoria.getCodCategoria());
             pstmt.executeUpdate();
             pstmt.close();
             return true;
@@ -67,20 +67,20 @@ public class ModeloDAO {
         }
     }
     
-    public static ArrayList<Modelo> getAll() {
+    public static ArrayList<Categoria> getAll() {
         try {
-            ArrayList<Modelo> listAll = null;
-            Modelo modelo = new Modelo();
+            ArrayList<Categoria> listAll = null;
+            Categoria categoria = new Categoria();
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Select * From Modelo Order By Descricao");
+                    "Select * From Categoria Order By Descricao");
             rs = pstmt.executeQuery();
             if (rs.next()) {
-                listAll = new ArrayList<Modelo>();
+                listAll = new ArrayList<Categoria>();
                 do {
-                    modelo = new Modelo();
-                    modelo.setCodModelo(rs.getInt("CodModelo"));
-                    modelo.setDescricao(rs.getString("Descricao"));                    
-                    listAll.add(modelo);
+                    categoria = new Categoria();
+                    categoria.setCodCategoria(rs.getInt("CodCategoria"));
+                    categoria.setDescricao(rs.getString("Descricao"));                    
+                    listAll.add(categoria);
                 } while (rs.next());
             }
             rs.close();
@@ -92,26 +92,25 @@ public class ModeloDAO {
         }
     }
     
-    public static Modelo getById(int Id) {
+    public static Categoria getById(int Id) {
         try {
-            Modelo modelo = null;
+            Categoria categoria = null;
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Select * From Modelo Where CodModelo = ?");
+                    "Select * From Categoria Where CodCategoria = ?");
             pstmt.setInt(1, Id);
             rs = pstmt.executeQuery();
             if (rs.next()) {
-                modelo = new Modelo();
-                modelo.setCodModelo(rs.getInt("CodModelo"));
-                modelo.setDescricao(rs.getString("Descricao"));                
+                categoria = new Categoria();
+                categoria.setCodCategoria(rs.getInt("CodCategoria"));
+                categoria.setDescricao(rs.getString("Descricao"));                
             }
             rs.close();
             pstmt.close();
-            return modelo;
+            return categoria;
         } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
     }
-    
-    
+        
 }

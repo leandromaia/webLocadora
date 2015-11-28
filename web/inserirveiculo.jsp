@@ -1,11 +1,6 @@
-<%-- 
-    Document   : inserircidade
-    Created on : 28/03/2008, 14:46:25
-    Author     : ebarros
---%>
 
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
-<%@ page import="java.util.ArrayList,controller.vo.Modelo,controller.vo.Marca,controller.vo.Categoria"%>
+<%@ page import="java.util.ArrayList,model.bean.Modelo,model.bean.Marca,model.bean.Categoria"%>
 <%@ include file="/menu.jsp" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">

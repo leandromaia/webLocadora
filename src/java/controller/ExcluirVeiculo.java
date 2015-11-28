@@ -9,9 +9,9 @@
 
 package controller;
 
-import controller.vo.Veiculo;
+import model.bean.Veiculo;
 import javax.servlet.http.HttpServletRequest;
-import model.VeiculoDAO;
+import model.dao.VeiculoDAO;
 
 /**
  *

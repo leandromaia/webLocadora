@@ -18,7 +18,7 @@ import javax.servlet.http.*;
  * @version
  */
 
-import model.Conexao;
+import model.dao.Conexao;
 
 public class ServletWeb extends HttpServlet {
     private ServletContext sc;

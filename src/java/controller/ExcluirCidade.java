@@ -10,9 +10,9 @@ package controller;
  * @author Everton Barros
  */
 
-import controller.vo.Cidade;
+import model.bean.Cidade;
 import javax.servlet.http.HttpServletRequest;
-import model.CidadeDAO;
+import model.dao.CidadeDAO;
 public class ExcluirCidade {
     public static String execute(HttpServletRequest request) {
         String jsp = "";

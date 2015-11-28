@@ -13,10 +13,10 @@ package controller;
  *
  * @author Everton Barros
  */
-import controller.vo.Cliente;
+import model.bean.Cliente;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
-import model.ClienteDAO;
+import model.dao.ClienteDAO;
 
 public class ListarCliente {
      

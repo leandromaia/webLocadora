@@ -5,9 +5,9 @@
 
 package controller;
 
-import controller.vo.Cidade;
+import model.bean.Cidade;
 import javax.servlet.http.HttpServletRequest;
-import model.CidadeDAO;
+import model.dao.CidadeDAO;
 
 /**
  *

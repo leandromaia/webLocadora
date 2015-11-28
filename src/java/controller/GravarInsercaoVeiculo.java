@@ -13,12 +13,12 @@ package controller;
  *
  * @author Everton Barros
  */
-import controller.vo.Veiculo;
+import model.bean.Veiculo;
 import javax.servlet.http.HttpServletRequest;
-import model.CategoriaDAO;
-import model.MarcaDAO;
-import model.ModeloDAO;
-import model.VeiculoDAO;
+import model.dao.CategoriaDAO;
+import model.dao.MarcaDAO;
+import model.dao.ModeloDAO;
+import model.dao.VeiculoDAO;
 
 public class GravarInsercaoVeiculo{
      public static String execute(HttpServletRequest request) {

@@ -5,9 +5,9 @@
 
 package controller;
 
-import controller.vo.Categoria;
+import model.bean.Categoria;
 import javax.servlet.http.HttpServletRequest;
-import model.CategoriaDAO;
+import model.dao.CategoriaDAO;
 
 /**
  *

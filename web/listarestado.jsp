@@ -1,5 +1,5 @@
 
-<%@page import="controller.vo.Estado,java.util.ArrayList"%>
+<%@page import="model.bean.Estado,java.util.ArrayList"%>
 <%@include file="/menu.jsp"%>
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"

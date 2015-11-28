@@ -1,6 +1,6 @@
 
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
-<%@page import="java.util.ArrayList,controller.vo.Cidade,model.CidadeDAO,model.ClienteDAO,controller.vo.Cliente"%>
+<%@page import="java.util.ArrayList,model.bean.Cidade,model.dao.CidadeDAO,model.dao.ClienteDAO,model.bean.Cliente"%>
 <%@ include file="/menu.jsp" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">

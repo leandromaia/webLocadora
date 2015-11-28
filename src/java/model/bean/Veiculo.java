@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package controller.vo;
+package model.bean;
 
 
 public class Veiculo {

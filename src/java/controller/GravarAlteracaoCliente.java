@@ -13,10 +13,10 @@ package controller;
  *
  * @author Everton Barros
  */
-import controller.vo.Cliente;
+import model.bean.Cliente;
 import javax.servlet.http.HttpServletRequest;
-import model.ClienteDAO;
-import model.CidadeDAO;
+import model.dao.ClienteDAO;
+import model.dao.CidadeDAO;
 
 public class GravarAlteracaoCliente {
     public static String execute(HttpServletRequest request) {

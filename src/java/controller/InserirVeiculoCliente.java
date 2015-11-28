@@ -9,12 +9,12 @@
 
 package controller;
 
-import controller.vo.Cliente;
-import controller.vo.Veiculo;
+import model.bean.Cliente;
+import model.bean.Veiculo;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
-import model.ClienteDAO;
-import model.VeiculoDAO;
+import model.dao.ClienteDAO;
+import model.dao.VeiculoDAO;
 
 
 /**

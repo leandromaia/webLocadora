@@ -15,8 +15,8 @@ package controller;
 
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
-import model.CategoriaDAO;
-import controller.vo.Categoria;
+import model.dao.CategoriaDAO;
+import model.bean.Categoria;
 
 public class ListarCategoria {
     

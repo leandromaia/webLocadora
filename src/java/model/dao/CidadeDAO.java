@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package model;
+package model.dao;
 
 /**
  *
@@ -16,7 +16,7 @@ package model;
 
 import java.sql.*;
 import java.util.ArrayList;
-import controller.vo.Cidade;
+import model.bean.Cidade;
 
 public class CidadeDAO {
     private static PreparedStatement pstmt = null;

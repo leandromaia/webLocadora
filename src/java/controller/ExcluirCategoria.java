@@ -13,8 +13,8 @@ package controller;
  * @author Everton Barros
  */
 import javax.servlet.http.HttpServletRequest;
-import model.CategoriaDAO;
-import controller.vo.Categoria;
+import model.dao.CategoriaDAO;
+import model.bean.Categoria;
 
 public class ExcluirCategoria {
     

@@ -1,12 +1,7 @@
-<%-- 
-    Document   : alterarveiculoCliente
-    Created on : 28/03/2008, 15:27:53
-    Author     : ebarros
---%>
 
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
-<%@page import="java.util.ArrayList,controller.vo.VeiculoCliente,model.VeiculoClienteDAO,
-               model.ClienteDAO,controller.vo.Cliente,model.VeiculoDAO,controller.vo.Veiculo"%>
+<%@page import="java.util.ArrayList,model.bean.VeiculoCliente,model.dao.VeiculoClienteDAO,
+               model.dao.ClienteDAO,model.bean.Cliente,model.dao.VeiculoDAO,model.bean.Veiculo"%>
 <%@ include file="/menu.jsp" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">

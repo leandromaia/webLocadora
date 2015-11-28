@@ -10,13 +10,13 @@ package controller;
  * @author ebarros
  */
 
-import controller.vo.Usuario;
+import model.bean.Usuario;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.UsuarioDAO;
+import model.dao.UsuarioDAO;
         
 public class Login {
      

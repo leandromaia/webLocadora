@@ -1,5 +1,5 @@
 
-package controller.vo;
+package model.bean;
 
 
 public class Categoria {

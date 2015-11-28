@@ -1,11 +1,6 @@
-<%-- 
-    Document   : alterarestado
-    Created on : 26/03/2008, 10:50:50
-    Author     : ebarros
---%>
 
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
-<%@page import="controller.vo.Estado,model.EstadoDAO"%>
+<%@page import="model.bean.Estado,model.dao.EstadoDAO"%>
 <%@ include file="/menu.jsp" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">

@@ -1,8 +1,3 @@
-<%-- 
-    Document   : inserirestado
-    Created on : 26/03/2008, 15:56:40
-    Author     : Everton Barros
---%>
 
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
 <%@ include file="/menu.jsp" %>

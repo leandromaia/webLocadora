@@ -14,8 +14,8 @@ package controller;
  */
 
 import javax.servlet.http.HttpServletRequest;
-import model.ModeloDAO;
-import controller.vo.Modelo;
+import model.dao.ModeloDAO;
+import model.bean.Modelo;
 
 public class GravarAlteracaoModelo {
     

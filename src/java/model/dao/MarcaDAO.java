@@ -1,5 +1,5 @@
 /*
- * EstadoDAO.java
+ * MarcaDAO.java
  *
  * Created on 10 de Mar�o de 2008, 19:05
  *
@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package model;
+package model.dao;
 
 /**
  *
@@ -16,19 +16,19 @@ package model;
 
 import java.sql.*;
 import java.util.ArrayList;
-import controller.vo.Estado;
+import model.bean.Marca;
 
-public class EstadoDAO {
+public class MarcaDAO {
     private static PreparedStatement pstmt = null;
     private static ResultSet rs = null;
     
-    public static boolean create(Estado estado) {
+    public static boolean create(Marca marca) {
         try {
+            marca.setCodMarca(Conexao.getAutoInc("Marca"));
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Insert Into Estado(siglaCod, sigla, nome) Values(?,?,?)");
-            pstmt.setString(1, estado.getSigla());
-            pstmt.setString(2, estado.getSigla());
-            pstmt.setString(3, estado.getNome());
+                    "Insert Into Marca(CodMarca, Descricao) Values(?,?)");
+            pstmt.setInt(1, marca.getCodMarca());
+            pstmt.setString(2, marca.getDescricao());            
             pstmt.executeUpdate();
             pstmt.close();
             return true;
@@ -38,13 +38,12 @@ public class EstadoDAO {
         }
     }
     
-    public static boolean update(Estado estado) {
+    public static boolean update(Marca marca) {
         try {
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Update Estado Set Sigla=?, Nome = ? Where Sigla = ?");
-            pstmt.setString(1, estado.getSigla());
-            pstmt.setString(2, estado.getNome());
-            pstmt.setString(3, estado.getSiglaCod());
+                    "Update Marca Set Descricao = ? Where CodMarca = ?");
+            pstmt.setString(1, marca.getDescricao());            
+            pstmt.setInt(2, marca.getCodMarca());
             pstmt.executeUpdate();
             pstmt.close();
             return true;
@@ -54,11 +53,11 @@ public class EstadoDAO {
         }
     }
     
-    public static boolean delete(Estado estado) {
+    public static boolean delete(Marca marca) {
         try {
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Delete From Estado Where sigla = ?");
-            pstmt.setString(1, estado.getSigla());
+                    "Delete From Marca Where CodMarca = ?");
+            pstmt.setInt(1, marca.getCodMarca());
             pstmt.executeUpdate();
             pstmt.close();
             return true;
@@ -68,20 +67,20 @@ public class EstadoDAO {
         }
     }
     
-    public static ArrayList<Estado> getAll() {
+    public static ArrayList<Marca> getAll() {
         try {
-            ArrayList<Estado> listAll = null;
-            Estado estado = new Estado();
+            ArrayList<Marca> listAll = null;
+            Marca marca = new Marca();
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Select * From Estado Order By Nome");
+                    "Select * From Marca Order By Descricao");
             rs = pstmt.executeQuery();
             if (rs.next()) {
-                listAll = new ArrayList<Estado>();
+                listAll = new ArrayList<Marca>();
                 do {
-                    estado = new Estado();
-                    estado.setSigla(rs.getString("Sigla"));
-                    estado.setNome(rs.getString("Nome"));
-                    listAll.add(estado);
+                    marca = new Marca();
+                    marca.setCodMarca(rs.getInt("CodMarca"));
+                    marca.setDescricao(rs.getString("Descricao"));                    
+                    listAll.add(marca);
                 } while (rs.next());
             }
             rs.close();
@@ -93,21 +92,21 @@ public class EstadoDAO {
         }
     }
     
-    public static Estado getById(String sigla) {
+    public static Marca getById(int Id) {
         try {
-            Estado estado = null;
+            Marca marca = null;
             pstmt = Conexao.getConnection().prepareStatement(
-                    "Select * From Estado Where siglaCod = ?");
-            pstmt.setString(1, sigla);
+                    "Select * From Marca Where CodMarca = ?");
+            pstmt.setInt(1, Id);
             rs = pstmt.executeQuery();
             if (rs.next()) {
-                estado = new Estado();
-                estado.setSigla(rs.getString("Sigla"));
-                estado.setNome(rs.getString("Nome"));
+                marca = new Marca();
+                marca.setCodMarca(rs.getInt("CodMarca"));
+                marca.setDescricao(rs.getString("Descricao"));                
             }
             rs.close();
             pstmt.close();
-            return estado;
+            return marca;
         } catch (Exception e) {
             e.printStackTrace();
             return null;

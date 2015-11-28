@@ -9,10 +9,10 @@ package controller;
  *
  * @author Everton Barros
  */
-import controller.vo.Cidade;
+import model.bean.Cidade;
 import javax.servlet.http.HttpServletRequest;
-import model.CidadeDAO;
-import model.EstadoDAO;
+import model.dao.CidadeDAO;
+import model.dao.EstadoDAO;
 
 public class GravarAlteracaoCidade {
     public static String execute(HttpServletRequest request) {
