@@ -160,7 +160,7 @@ function ValidarCliente(frm){
         alert("Favor, informe o cpf!");
         frm.cpf.focus();
         return false;
-    }else if(frm.datanasc.value == ""){
+    }else if(frm.dataNasc.value == ""){
         alert("Favor, informe a Data de Nascimento!");
         frm.dataNasc.focus();
         return false;
